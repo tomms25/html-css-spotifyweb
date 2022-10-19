@@ -9,15 +9,11 @@ body{
 }
 
 
-/* .topbar{ */
-    /* max-width: 1480px; */
-    /* background-color: #080b12; */
-/* } */
 
 .botton{
     background-color: #080b12;
-    max-width: 1480px;
-    width: calc(100% - 300px);
+    margin-left: 300px;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -33,17 +29,23 @@ body{
     font-size: 15px;
 }
 
-.sidebar{
+.wrapper{
     background-color: #000000;
-    width: 300px;
     height: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
+.sidebar-container{
+    width: 300px;
+}
 
-.side.container h3{
+
+.sidebar-container h3{
     color: white;
 }
