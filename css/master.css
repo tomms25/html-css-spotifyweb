@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Myriad Pro', sans-serif;                                          
+}
+
+
+/* .topbar{ */
+    /* max-width: 1480px; */
+    /* background-color: #080b12; */
+/* } */
+
+.botton{
+    background-color: #080b12;
+    max-width: 1480px;
+    width: calc(100% - 300px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.botton a{
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.sidebar{
+    background-color: #000000;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.side.container h3{
+    color: white;
+}
