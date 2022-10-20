@@ -32,10 +32,10 @@ a{
 .botton{
     background-color: #080b12;
     opacity: 90%;
-    width: 100%;
     position: fixed;
     top: 0;
     right: 0;
+    left: 300px;
     z-index: 300;
     display: flex;
     justify-content: flex-end;
@@ -58,7 +58,7 @@ a{
 
 .wrapper{
     background-color: #000000;
-    height: 100%;
+    height: calc(100% - 100px);
     width: 300px;
     position: fixed;
     top: 0;
@@ -97,16 +97,18 @@ a{
 /* Album section */
 .album-container{
     background-color: #141922;
-    height: 1000px;
+    height: calc(100% - 100px);
     max-width: 1480px;
     width: 100%;
-    margin-left: 300px;
+    position: fixed;
+    top: 0;
+    left: 300px;
 }
 
 
 .category-menu{
     width: 100%;
-    margin-top: 80px;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
 
@@ -121,6 +123,7 @@ a{
 
 .playbar-container{
     background-color: #282828;
+    height: 100px;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -130,5 +133,4 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
 }
