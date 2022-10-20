@@ -7,8 +7,11 @@
 body{
     font-family: 'Myriad Pro', sans-serif;   
     text-decoration: none;
-    list-style-type: none;                                       
+    list-style-type: none;
+    background-color: #141922;  
+    display: flex;                               
 }
+
 
 
 ul{
@@ -25,10 +28,9 @@ a{
 
 /* viewport e divisione degli spazi */
 
-.main-container{
+.container{
     /* background-color: black; */
     width: 100%;
-    height: calc(100vh - 100px);
     display: flex;
     justify-content: space-between;
 }
@@ -36,17 +38,16 @@ a{
 .spotify-column{
     background-color: #000000;
     width: 250px;
-    height: 100%;
+    flex-shrink: 5;
 }
 
 
 
 
 .album-column{
-    background-color: #141922;
     flex-grow: 1;
     width: calc(100% - 250px);
-
+    height: calc(100vh - 100px);
 }
 
 
@@ -152,5 +153,4 @@ a{
     background-color: #282828;
     height: 100px;
     width: 100%;
-    position: fixed;
 }
