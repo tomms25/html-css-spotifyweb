@@ -85,7 +85,6 @@ a{
 }
 
 .category-menu{
-    width: calc(100% -10px);
     display: flex;
     justify-content: center;
     align-items: center;
