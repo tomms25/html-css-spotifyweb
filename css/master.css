@@ -77,18 +77,18 @@ a{
 }
 
 
-/* Struttura con album */
+/* category section */
 
 .album-container{
-    width: 100%;
+    width: calc(100% - 250px);
     padding-top: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .category-menu{
     width: calc(100% -10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .category-menu a{
@@ -97,7 +97,7 @@ a{
     margin-right: 15px;
 }
 
-/* Prima sezione main con album */
+/* Recently Played section */
 
 .first-row-album{
     margin: 40px 0 15px 25px;
@@ -138,6 +138,5 @@ a{
 .playbar{
     background-color: #282828;
     height: 100px;
-    max-width: 1480px;
     width: 100%;
 }
