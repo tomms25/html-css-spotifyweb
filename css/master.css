@@ -27,110 +27,48 @@ a{
     text-decoration: none;
 }
 
-/* header with upgrade botton */
+/* viewport e divisione degli spazi */
 
-.botton{
-    background-color: #080b12;
-    opacity: 90%;
+.main-container{
+    /* background-color: black; */
+    max-width: 1480px;
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.spotify-column{
+    background-color: yellow;
+    width: 250px;
+    height: 100%;
+}
+
+.album-column{
+    background-color: red;
+    flex-grow: 1;
+}
+
+.topbar-botton{
+    width: calc(100% - 250px);
     position: fixed;
     top: 0;
     right: 0;
-    left: 300px;
     z-index: 300;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    padding: 20px 0;
+    background-color: black;
 }
 
-.botton a{
-    margin-right: 10px;
-    color: white;
-    border: 1px solid white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 15px;
-}
-
-
-/* Sidebar */
-
-.wrapper{
-    background-color: #000000;
-    height: calc(100% - 100px);
-    width: 300px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 300;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.sidebar-container{
-    flex-basis: 300px;
-    margin: 20px 40px;
-}
-
-.sidebar-container h3, span, i{
-    color:white;
-    font-size: 40px;
-}
-
-.side-menu{
-    margin-top: 20px;
-}
-
-.side-menu i{
-    font-size: 25px;
-}
-
-.side-menu span{
-    font-size: 20px;
-    margin-left: 10px;
-}
-
-
-
-/* Album section */
-.album-container{
-    background-color: #141922;
-    height: calc(100% - 100px);
-    max-width: 1480px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 300px;
-}
-
-
-.category-menu{
-    width: 100%;
-    padding-top: 80px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.category-menu a{
-    color: #6d6f75;
+.topbar-botton a{
+    padding: 10px 15px;
 }
 
 
 /* Playbar */
-
-.playbar-container{
-    background-color: #282828;
+.playbar{
+    background-color: grey;
     height: 100px;
+    max-width: 1480px;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 300;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
