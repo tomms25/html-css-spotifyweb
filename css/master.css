@@ -45,12 +45,14 @@ a{
 }
 
 .album-column{
-    background-color: red;
+    background-color: #141922;
     flex-grow: 1;
+
 }
 
 .topbar-botton{
     width: calc(100% - 250px);
+    opacity: 0.8;
     position: fixed;
     top: 0;
     right: 0;
@@ -58,10 +60,15 @@ a{
     display: flex;
     justify-content: flex-end;
     background-color: black;
+    padding: 10px;
 }
 
 .topbar-botton a{
     padding: 10px 15px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-right: 10px;
 }
 
 
@@ -71,4 +78,8 @@ a{
     height: 100px;
     max-width: 1480px;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 300;
 }
