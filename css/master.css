@@ -41,6 +41,14 @@ a{
     height: 100%;
 }
 
+
+.album-column{
+    flex-grow: 1;
+    width: calc(100% - 250px);
+    height: 100%;
+    overflow: auto;
+}
+
 /* Sidebar */
 
 
@@ -107,17 +115,6 @@ a{
 }
 
 
-
-
-
-
-
-.album-column{
-    flex-grow: 1;
-    width: calc(100% - 250px);
-    height: 100%;
-    overflow: auto;
-}
 
 
 /* Struttura topbar */
@@ -374,6 +371,13 @@ a{
 
 /* TABLET */
 
+
+@media screen (max-width:980px) {
+    
+}
+
+
+
 @media screen and (max-width: 810px){
     
 }
@@ -381,7 +385,77 @@ a{
 
 /* SMARTPHONE */
 
-@media screen (max-width: 580px) {
+@media screen and (max-width: 590px) {
+
+
+    .container{
+        /* background-color: black; */
+        width: 100%;
+        height: calc(100vh - 100px);
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .spotify-column{
+        background-color: #000000;
+        width: 50px;
+        height: 100%;
+    }
+    
+    
+    .album-column{
+        flex-grow: 1;
+        width: calc(100% - 250px);
+        height: 100%;
+        overflow: auto;
+    }
+
+
+    /* sidebar */
+
+
+    .spotify-container{
+        margin: 0;
+    }
+
+    .title h2{
+        display: none;
+    }
+
+    .side-menu span{
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+
+    /* Albums structure */
+
+    .category-menu{
+        flex-wrap: wrap;
+    }
+
+    .recently-played{
+        flex-wrap: wrap;
+    }
+
+
+
+
+    /* Playbar */
+
+    .playbar{
+        max-width: 100%;
+    }
+
+    
+
+    
+    
+    
+
     
 }
 
