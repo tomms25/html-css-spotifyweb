@@ -14,7 +14,58 @@
     <!-- viewport e divisione degli spazi -->
     <main>
        <div class="container">
-            <div class="spotify-column"></div>
+            <div class="spotify-column">
+                <div class="spotify-container">
+                    <div class="title">
+                        <i class="fa-brands fa-spotify"></i>
+                        <h2>
+                            Spotify
+                        </h2>
+                    </div>
+                    <div class="side-menu">
+                        <div class="first-item">
+                            <a href="">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Home</span>
+                            </a>
+                        </div>
+                        <div class="second-item">
+                            <a href="">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span>Cerca</span>
+                            </a>
+                        </div>
+                        <div class="third-item">
+                            <a href="">
+                                <i class="fa-solid fa-book-open"></i>
+                                <span>La tua libreria</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <div class="notehead">
+                            <a href="">
+                                <h4>
+                                    Playlist
+                                </h4>
+                                <span id="plus">+</span>
+                                <span>Crea playlist</span>
+                            </a>
+                        </div>
+                        <div class="scroll-menu">
+                            <a href="">
+                                <ul>
+                                    <li>Nome playlist</li>
+                                    <li>Nome playlist</li>
+                                    <li>Nome playlist</li>
+                                    <li>Nome playlist</li>
+                                    <li>Nome playlist</li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="album-column">
                 <section class="topbar-botton">
                     <a href="">EFFETTUA L&apos;UPGRADE</a>
@@ -34,7 +85,7 @@
                     <!-- Recently Played section -->
                     <section class="first-row-album">
                         <div class="text-row">
-                            <h3>
+                            <h3 id="title-rp">
                                 Recently Played
                             </h3>
                         </div>
@@ -42,21 +93,57 @@
                         <div class="recently-played">
                             <div class="rp-card">
                                 <img src="img/metal_lifting.jpg" alt="">
+                                <h5>
+                                    Heavy Metal
+                                </h5>
+                                <p>
+                                    Subtitle
+                                </p>
                             </div>
                             <div class="rp-card">
                                 <img src="img/stranger.jpeg" alt="">
+                                <h5>
+                                    Heavy Metal
+                                </h5>
+                                <p>
+                                    Subtitle
+                                </p>
                             </div>
                             <div class="rp-card">
                                 <img src="img/aquietplace.jpeg" alt="">
+                                <h5>
+                                    Heavy Metal
+                                </h5>
+                                <p>
+                                    Subtitle
+                                </p>
                             </div>
                             <div class="rp-card">
                                 <img src="img/split.jpeg" alt="">
+                                <h5>
+                                    Heavy Metal
+                                </h5>
+                                <p>
+                                    Subtitle
+                                </p>
                             </div>
                             <div class="rp-card">
                                 <img src="img/cure.jpeg" alt="">
+                                <h5>
+                                    Heavy Metal
+                                </h5>
+                                <p>
+                                    Subtitle
+                                </p>
                             </div>
                             <div class="rp-card">
                                 <img src="img/sinister.jpeg" alt="">
+                                <h5>
+                                    Heavy Metal
+                                </h5>
+                                <p>
+                                    Subtitle
+                                </p>
                             </div>
                         </div>
                     </section>
@@ -75,9 +162,21 @@
                         <div class="john-doe">
                             <div class="rp-card">
                                 <img src="img/metal_lifting.jpg" alt="">
+                                <h5>
+                                    Heavy Metal
+                                </h5>
+                                <p>
+                                    Subtitle
+                                </p>
                             </div>
                             <div class="rp-card">
                                 <img src="img/stranger.jpeg" alt="">
+                                <h5>
+                                    Heavy Metal
+                                </h5>
+                                <p>
+                                    Subtitle
+                                </p>
                             </div>
                         </div>
                     </section>
@@ -86,7 +185,7 @@
                     <section class="third-row-album">
                         <div class="text-row">
                             <h3>
-                                Creato per John Doe
+                                Artisti pi&uacute; popolari
                             </h3>
                             <p>
                                 Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti 
@@ -95,10 +194,22 @@
                         
                         <div class="john-doe">
                             <div class="rp-card">
-                                <img src="img/metal_lifting.jpg" alt="">
+                                <img src="img/youg.jpeg" alt="">
+                                <h5>
+                                    Heavy Metal
+                                </h5>
+                                <p>
+                                    Subtitle
+                                </p>
                             </div>
                             <div class="rp-card">
-                                <img src="img/stranger.jpeg" alt="">
+                                <img src="img/einaudi.jpeg" alt="">
+                                <h5>
+                                    Heavy Metal
+                                </h5>
+                                <p>
+                                    Subtitle
+                                </p>
                             </div>
                         </div>
                     </section>
@@ -118,7 +229,59 @@
 
     <!-- playbar -->
     <footer>
-        <div class="playbar"></div>
+        <div class="playbar">
+            <div class="left-command">
+                <img src="img/sinister.jpeg" alt="">
+                <a href="">
+                    <span>
+                        <h5>
+                            Sinister
+                        </h5>
+                        <p>
+                            Brano Nome
+                        </p>
+                    </span>
+                    <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+                </a>
+
+
+            </div>
+            <div class="middle-command">
+                <div class="botton-command">
+                    <a href="">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i id="play-botton" class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </a>
+                    
+
+                </div>
+                <a href="">
+                    <div class="progress-bar">
+                        <span>0.25</span>
+                        <div class="bar">
+                            <div class="music-progress"></div>
+                        </div>
+                        <span>4.35</span>
+                    </div>
+                </a>
+            </div>
+            <div class="right-command">
+                <a href="">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="bar">
+                        <div class="music-progress"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </footer>
 
 </body>
